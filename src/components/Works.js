@@ -54,7 +54,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_Link }
 const Works = () => {
   return (
 
-    <div className="w-full min-h-screen works" >
+    <div className="w-full min-h-screen" >
       <div>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
