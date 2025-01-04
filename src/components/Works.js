@@ -81,6 +81,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_Link }
   // const isMobile = isBrowser ? window.innerWidth <= 768 : false;
 
   return (
+    <section id="works">
     <div className='bg-black p-5 rounded-2xl sm:w-[360px] w-full'>
       <div className="relative w-full h-[230px]">
         <img
@@ -118,12 +119,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_Link }
         ))}
       </div>
     </div>
+    </section>
   );
 };
 
 const Works = () => {
   return (
-    <div className="w-full min-h-screen">
+  
+    <div className="w-full min-h-screen works" >
       <div>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
@@ -145,6 +148,7 @@ const Works = () => {
         ))}
       </div>
     </div>
+
   );
 };
 

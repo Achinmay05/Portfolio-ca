@@ -49,11 +49,9 @@ export const Navbar = () => {
                                 <HashLink className={`nav-link ${activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}`} to="#skills" onClick={() => onUpdateActiveLink('skills')}>Skills</HashLink>
                             </li>
                             <li className="nav-item">
-                                <HashLink className={`nav-link ${activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}`} to="#projects" onClick={() => onUpdateActiveLink('projects')}>Projects</HashLink>
+                                <HashLink className={`nav-link ${activeLink === 'works' ? 'active navbar-link' : 'navbar-link'}`} to="#works" onClick={() => onUpdateActiveLink('works')}>My Work</HashLink>
                             </li>
-                            <li className="nav-item">
-                                <HashLink className={`nav-link ${activeLink === 'achievements' ? 'active navbar-link' : 'navbar-link'}`} to="#achievements" onClick={() => onUpdateActiveLink('achievements')}>Achievements</HashLink>
-                            </li>
+                        
                             <li className="nav-item">
                                 <HashLink className={`nav-link ${activeLink === 'LeetCode' ? 'active navbar-link' : 'navbar-link'}`} to="#LeetCode" onClick={() => onUpdateActiveLink('LeetCode')}>Competitive Profile</HashLink>
                             </li>
