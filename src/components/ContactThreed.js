@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
@@ -61,8 +61,32 @@ const ContactThreed = () => {
 
     // 8888888888888
 
+    const [form, setForm] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+
+
     const [buttonText, setButtonText] = useState('Send');
     const [isDisabled, setIsDisabled] = useState(false)
+
+    useEffect(() => {
+        const allFieldsFilled =
+            form.name.trim() !== '' &&
+            form.email.trim() !== '' &&
+            form.message.trim() !== '';
+        setIsDisabled(!allFieldsFilled);
+    }, [form]);
+
+    function handleChange(e) {
+        const { name, value } = e.target;
+        setForm(prevForm => ({
+            ...prevForm,
+            [name]: value
+        }));
+    }
 
     function sendEmail(e) {
         e.preventDefault();
@@ -72,7 +96,7 @@ const ContactThreed = () => {
         emailjs.sendForm('service_dch7b1u', 'template_95qs7pu', e.target, '-SIGKYyj5bPnIR_4W').then(res => {
             console.log(res);
             setButtonText('Sent');
-            e.target.reset(); // Reset the form fields
+            setForm({ name: '', email: '', message: '' }); // Reset the form fields
         }).catch(err => {
             console.log(err);
             setButtonText('Failed');
@@ -92,22 +116,22 @@ const ContactThreed = () => {
                 <form onSubmit={sendEmail} className='mt-12 flex flex-col gap-8'>
                     <label className='flex flex-col'>
                         <span className='text-white font-medium mb-4'>Your Name</span>
-                        <input type="text" name="name" placeholder="What's your name?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
+                        <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="What's your name?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
                     </label>
                     <label className='flex flex-col'>
                         <span className='text-white font-medium mb-4'>Your Email</span>
-                        <input type="email" name="email" placeholder="What's your email?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
+                        <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="What's your email?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
                     </label>
                     <label className='flex flex-col'>
                         <span className='text-white font-medium mb-4'>Your Message</span>
-                        <textarea rows="7" name="message" placeholder="What do you want to say?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
+                        <textarea rows="7" name="message" value={form.message} onChange={handleChange} placeholder="What do you want to say?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-black rounded-lg outlined-none border-none font-medium" />
                     </label>
 
                     <button type="submit"
                         disabled={isDisabled}
                         className={`bg-purple-500 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl ${isDisabled
-                                ? 'opacity-50 cursor-not-allowed'
-                                : 'hover:bg-purple-600'
+                            ? 'opacity-50 cursor-not-allowed'
+                            : 'hover:bg-purple-600'
                             }`}>
                         <span>{buttonText}</span>
                     </button>
