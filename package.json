@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^9.120.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +16,7 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.19.2",
     "framer-motion": "^11.15.0",
+    "maath": "^0.10.8",
     "nodemailer": "^6.9.14",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
@@ -47,6 +50,7 @@
       "not dead",
       "not op_mini all"
     ],
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
