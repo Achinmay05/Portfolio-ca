@@ -7,6 +7,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ShootingStar } from './components/ShootingStar.tsx';
 import Works from './components/Works';
+import Experience from './components/Experience.js';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* <Navbar /> */}
       <Banner />
       <Skills />
+      <Experience/>
       <Works />
       <ShootingStar/>
       <Contact/>

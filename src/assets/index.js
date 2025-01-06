@@ -25,9 +25,9 @@ import github from "./github.png";
 
 
 
-// import zscaler from "./company/zscaler.png";
+import zscaler from "./company/zscaler.png";
 
-// import ibm from "./company/ibm.png";
+import ibm from "./company/ibm.png";
 
 
 import inotebook from "./inotebook.png";
@@ -40,16 +40,14 @@ import exp from "./exp.png";
 
 export {
   github,
-
-
-
-
   inotebook,
   chatApp,
   blog,
   news,
   cart,
   exp,
+  ibm,
+  zscaler
 
 
 };

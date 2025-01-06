@@ -51,7 +51,7 @@ export const Navbar = () => {
                             <li className="nav-item">
                                 <HashLink className={`nav-link ${activeLink === 'works' ? 'active navbar-link' : 'navbar-link'}`} to="#works" onClick={() => onUpdateActiveLink('works')}>My Work</HashLink>
                             </li>
-                        
+
                             <li className="nav-item">
                                 <HashLink className={`nav-link ${activeLink === 'LeetCode' ? 'active navbar-link' : 'navbar-link'}`} to="#LeetCode" onClick={() => onUpdateActiveLink('LeetCode')}>Competitive Profile</HashLink>
                             </li>

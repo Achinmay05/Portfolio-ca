@@ -6,6 +6,8 @@ import {
   news,
   cart,
   exp,
+  ibm,
+  zscaler
 
 } from "../assets";
 
@@ -22,6 +24,61 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+];
+
+const experiences = [
+  {
+    title: "Front End Web Developer",
+    company_name: "IBM Skillsbuild",
+    icon: ibm,
+    iconBg: "#383E56",
+    date: "June 2024 - August 2024",
+    points: [
+      "Completed a comprehensive Web Development Internship Plan with CSRBOX for the year 2024-2025.",
+      "Gained hands-on experience in developing and implementing web-based solutions, showcasing technical skills in modern web technologies.",
+      "Collaborated on projects that enhanced understanding of coding, debugging, and optimizing websites for performance and usability.",
+      "Successfully applied theoretical knowledge in practical scenarios, achieving the internship completion milestone on 12 September 2024.",
+    ],
+  },
+  {
+    title: "Networking Intern",
+    company_name: "zscaler",
+    icon: zscaler,
+    iconBg: "#E6DEDD",
+    date: "January 2024 - March 2024",
+    points: [
+      "Successfully completed a virtual internship program with Zscaler, focusing on developing skills in cybersecurity and cloud-based solutions.",
+      "Gained hands-on experience in cloud security and virtual networking through structured, remote learning and practical assignments.",
+      "Strengthened knowledge in cybersecurity protocols and strategies while adapting to a fully virtual working environment.",
+      "Earned recognition for completing the internship, showcasing adaptability and commitment to professional growth in a digital-first workspace.",
+    ],
+  },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const projects = [
@@ -95,4 +152,4 @@ const projects = [
   },
 ];
 
-export { projects };
+export { projects, experiences };

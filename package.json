@@ -25,6 +25,7 @@
     "react-scripts": "^5.0.1",
     "react-simple-typewriter": "^5.0.1",
     "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.5.3",
     "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
