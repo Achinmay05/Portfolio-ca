@@ -17,6 +17,11 @@
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /************ Default Css ************/
 * {
   margin: 0;

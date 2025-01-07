@@ -3,7 +3,7 @@
 // import creator from "./creator.png";
 // import mobile from "./mobile.png";
 // import web from "./web.png";
-import github from "./github.png";
+import github from "./github.webp";
 // import menu from "./menu.svg";
 // import close from "./close.svg";
 // import chinnu from "./chinnu.svg";
@@ -25,17 +25,25 @@ import github from "./github.png";
 
 
 
-import zscaler from "./company/zscaler.png";
+// import zscaler from "./company/zscaler.png";
+import zscaler from "./company/zscaler.webp";
 
-import ibm from "./company/ibm.png";
+// import ibm from "./company/ibm.png";
+import ibm from "./company/ibm.webp";
 
 
-import inotebook from "./inotebook.png";
-import chatApp from "./chatApp.png";
-import blog from "./huntingCoder.png";
-import news from "./newsApp.png";
-import cart from "./cart.png";
-import exp from "./exp.png";
+// import inotebook from "./inotebook.png";
+// import chatApp from "./chatApp.png";
+// import blog from "./huntingCoder.png";
+// import news from "./newsApp.png";
+// import cart from "./cart.png";
+// import exp from "./exp.png";
+import inotebook from "./inotebook.webp";
+import chatApp from "./chatApp.webp";
+import blog from "./huntingCoder.webp";
+import news from "./newsApp.webp";
+import cart from "./cart.webp";
+import exp from "./exp.webp";
 
 
 export {
